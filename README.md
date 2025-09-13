@@ -11,11 +11,14 @@ A collection of tested Claude commands designed to streamline common software en
 
 **File**: [`code_review.md`](code_review.md)
 
-**Purpose**: Perform comprehensive pull request analysis with structured feedback
+**Purpose**: Perform comprehensive analysis of a pull request  against established software engineering practices such as SOLID programming, GoF design patterns.  The review then generates structured and feedbacks categorized according to priority High, Medium, Low, etc.
 
 **Usage**:
 ```
-Review the code and unit tests in the pull request: <PR_NUMBER|PR_URL|BRANCH_NAME>
+1. Initialize the repository by running `/init` command
+2. Create a `commands` folder under the `.claude` folder
+3. Checkout the branch that contains the latest changes or pull request
+3. Run `/code_review <pull-request-branch-name>`
 ```
 
 **Features**:
@@ -39,7 +42,11 @@ Review the code and unit tests in the pull request: <PR_NUMBER|PR_URL|BRANCH_NAM
 
 **Usage**:
 ```
-Analyze the exception details in <EXCEPTION_FILE> and identify the root cause...
+1. Initialize the repository by running `/init` command
+2. Create a `commands` folder under the `.claude` folder
+3. Checkout the branch that contains the latest changes or pull request
+4. Save the available stack traces in a text file (e.g., exceptions.txt)
+3. Run root cause analysis `/rca @exceptions.txt`
 ```
 
 **Features**:
