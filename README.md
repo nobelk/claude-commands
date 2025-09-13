@@ -16,7 +16,7 @@ A collection of tested Claude commands designed to streamline common software en
 **Usage**:
 ```
 1. Initialize the repository by running `/init` command
-2. Create a `commands` folder under the `.claude` folder
+2. Place `commands` folder under the `.claude` folder
 3. Checkout the branch that contains the latest changes or pull request
 3. Run `/code_review <pull-request-branch-name>`
 ```
@@ -43,7 +43,7 @@ A collection of tested Claude commands designed to streamline common software en
 **Usage**:
 ```
 1. Initialize the repository by running `/init` command
-2. Create a `commands` folder under the `.claude` folder
+2. Place `commands` folder under the `.claude` folder
 3. Checkout the branch that contains the latest changes or pull request
 4. Save the available stack traces in a text file (e.g., exceptions.txt)
 3. Run root cause analysis `/rca @exceptions.txt`
@@ -100,7 +100,3 @@ When adding new commands:
 - Provide clear usage examples
 - Test commands with real scenarios
 - Update this README with new command documentation
-
-## License
-
-Licensed under the Apache License 2.0. See [LICENSE](LICENSE) for details.
